@@ -1,0 +1,135 @@
+:root{
+    --light-gray: #fafafa;
+    --grayish-blue: #A3A5AE;
+    --dark-blue: #4C4E61;
+    --blue: #549EF2;
+    --orange: #FCAF4A;
+    --cyan: #45D3D3;
+    --red: #EA5353;
+    --shadow: 0px 10px 20px rgba(0, 0, 0, 0.14);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-gray);
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+}
+header{
+    text-align: center;
+    margin-top: 2.5em;
+}
+header h3{
+    font-weight: 200 !important;
+}
+header h2{
+    color: var(--dark-blue);
+}
+header p{
+    font-size: 13px;
+    color: var(--grayish-blue);
+    padding-top: 1.3em;
+    max-width: 50%;
+    margin: auto;
+
+}
+section{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    padding: 1em 1.5em;
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+    margin-bottom: 2em;
+    background-color: white;
+    transition: all .4s ease;
+}
+.box h3{
+    font-weight: 600;
+    margin-bottom: .6em;
+    color: var(--dark-blue);
+}
+.box p{
+    color: var(--grayish-blue);
+    font-size: 13px;
+}
+.box img{
+    text-align: right;
+    margin-top: 1.8em;
+}
+.box.red{
+    border-top: 4px solid var(--red);
+}
+.box.orange{
+    border-top: 4px solid var(--orange);
+}
+.box.cyan{
+    border-top: 4px solid var(--cyan);
+}
+.box.blue{
+    border-top: 4px solid var(--blue);
+}
+.box-img{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media(min-width:767px){
+    .container{
+        /* height: 100vh; */
+    }
+    section{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .box{
+        flex-basis:calc(33.333% - 2em);
+        margin-right: 2em;
+    }
+    .box.cyan, .box.box.orange{
+        transform: translateY(50%);
+    }
+    .box.blue{
+        transform: translatex(115%);
+    }
+}
+
+@media(min-width:836px){
+    .box.blue{
+        transform: translatex(112%);
+    }
+}
+
+@media(min-width:952px){
+    .box.blue{
+        transform: translatex(112%);
+    }
+}
+
+@media(min-width:998px){
+    .box.blue{
+        transform: translatex(111%);
+    }
+}
+
+@media(min-width:1060px){
+    .box.blue{
+        transform: translatex(110%);
+    }
+}
