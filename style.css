@@ -43,7 +43,6 @@ header p{
     font-size: 13px;
     color: var(--grayish-blue);
     padding-top: 1.3em;
-    max-width: 50%;
     margin: auto;
 
 }
@@ -107,6 +106,9 @@ section{
     }
     .box.blue{
         transform: translatex(115%);
+    }
+    header p{
+        max-width: 50%;
     }
 }
 
